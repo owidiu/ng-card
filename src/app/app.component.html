@@ -1,0 +1,76 @@
+
+
+
+<!-- <div class="container">
+  <div class="row" >
+    <div class="col-sm" >
+      <div class="card-group">
+        <div class="card m-2"*ngFor="let data of mock_data">
+          <img class="card-img-top" src="{{data.profile_image}}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{data.title}} {{data.first_name}} {{data.last_name}}</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<section class="wrapper">
+  <div class="container-fostrap">
+      
+      <div class="content">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xs-12 col-sm-4" *ngFor="let data of data" >
+                      <div class="card">
+                          <a class="img-card" href="">
+                          <img src="{{data.profile_img}}" />
+                        </a>
+                          <div class="card-content">
+                              <h4 class="card-title">
+                                  <a href=""> {{data.title}} {{data.first_name}} {{data.last_name}}
+                                </a>
+                              </h4>
+                              
+                              <p class="">
+                                  {{data.job_title}}
+                              </p>
+                              <p>
+                                  {{data.company_name}}
+                              </p>
+                              <ul>
+                                <li *ngFor="let panarama of data.media">
+                                  {{panarama}}
+
+                                </li>
+                                
+
+                              </ul>
+
+                              <ul>
+                                <li *ngFor="let zdreanta of data.address">
+                                  {{zdreanta.country}} |
+                                  {{zdreanta.city}} |
+                                  {{zdreanta.street.number}} |
+                                  {{zdreanta.street.name}} 
+
+                                </li>
+                                
+
+                              </ul>
+                              
+                          </div>
+                          <div class="card-read-more">
+                              <a href="" class="btn btn-link btn-block">
+                                  Read More
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
